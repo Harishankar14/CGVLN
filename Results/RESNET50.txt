@@ -1,0 +1,178 @@
+================================================================================
+CGVulnScan - Neural Network Vulnerability Analysis Report
+================================================================================
+
+Total Vulnerabilities Found: 17
+  - Adversarial: 3
+  - Numerical: 1
+  - Privacy: 13
+
+
+================================================================================
+ADVERSARIAL VULNERABILITIES
+================================================================================
+
+[MEDIUM] high_lipschitz
+Node: resnetv17_conv0_fwd
+Message: Layer resnetv17_conv0_fwd has high Lipschitz constant (26.12), amplifying adversarial perturbations
+Lipschitz Constant: 2.61e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: resnetv17_stage4_conv8_fwd
+Message: Layer resnetv17_stage4_conv8_fwd has high Lipschitz constant (10.79), amplifying adversarial perturbations
+Lipschitz Constant: 1.08e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] global_lipschitz
+Node: GLOBAL
+Message: Global Lipschitz constant 3.93e+21 indicates extreme adversarial vulnerability
+Lipschitz Constant: 3.93e+21
+
+Remediation:
+
+================================================================================
+NUMERICAL INSTABILITY VULNERABILITIES
+================================================================================
+
+[CRITICAL] gradient_explosion
+Node: resnetv17_stage2_conv3_fwd
+Message: Gradient explosion detected: ∏||∂f/∂x|| = 1.61e+06 > 10^6 at resnetv17_stage2_conv3_fwd
+
+Remediation:
+
+================================================================================
+PRIVACY LEAKAGE VULNERABILITIES
+================================================================================
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_conv0_fwd
+Message: Layer resnetv17_conv0_fwd has high condition number (27931.6) with tainted data flow, risk of training data leakage
+Condition Number: 2.79e+04
+Taint Score: 1.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_stage1_conv0_fwd
+Message: Layer resnetv17_stage1_conv0_fwd has high condition number (158741.7) with tainted data flow, risk of training data leakage
+Condition Number: 1.59e+05
+Taint Score: 2.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_stage1_conv1_fwd
+Message: Layer resnetv17_stage1_conv1_fwd has high condition number (3377.2) with tainted data flow, risk of training data leakage
+Condition Number: 3.38e+03
+Taint Score: 2.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_stage1_conv2_fwd
+Message: Layer resnetv17_stage1_conv2_fwd has high condition number (2547.5) with tainted data flow, risk of training data leakage
+Condition Number: 2.55e+03
+Taint Score: 3.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_stage1_conv3_fwd
+Message: Layer resnetv17_stage1_conv3_fwd has high condition number (10278.3) with tainted data flow, risk of training data leakage
+Condition Number: 1.03e+04
+Taint Score: 2.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_stage1_conv4_fwd
+Message: Layer resnetv17_stage1_conv4_fwd has high condition number (2268.9) with tainted data flow, risk of training data leakage
+Condition Number: 2.27e+03
+Taint Score: 3.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_stage1_conv7_fwd
+Message: Layer resnetv17_stage1_conv7_fwd has high condition number (6140.2) with tainted data flow, risk of training data leakage
+Condition Number: 6.14e+03
+Taint Score: 4.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_stage2_conv0_fwd
+Message: Layer resnetv17_stage2_conv0_fwd has high condition number (4254.3) with tainted data flow, risk of training data leakage
+Condition Number: 4.25e+03
+Taint Score: 4.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] skip_connection_leakage
+Node: resnetv17_stage3__plus4
+Message: Skip connection at resnetv17_stage3__plus4 (distance=8, 47 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] skip_connection_leakage
+Node: resnetv17_stage3__plus5
+Message: Skip connection at resnetv17_stage3__plus5 (distance=8, 37 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] skip_connection_leakage
+Node: resnetv17_stage4__plus1
+Message: Skip connection at resnetv17_stage4__plus1 (distance=8, 15 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[HIGH] skip_connection_leakage
+Node: resnetv17_stage4__plus2
+Message: Skip connection at resnetv17_stage4__plus2 (distance=8, 5 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] high_sensitivity_taint
+Node: resnetv17_dense0_fwd
+Message: Layer resnetv17_dense0_fwd has high condition number (38429.5) with tainted data flow, risk of training data leakage
+Condition Number: 3.84e+04
+Taint Score: 5.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+================================================================================
+End of Report
+================================================================================

@@ -1,0 +1,383 @@
+================================================================================
+CGVulnScan - Neural Network Vulnerability Analysis Report
+================================================================================
+
+Total Vulnerabilities Found: 47
+  - Adversarial: 20
+  - Numerical: 1
+  - Privacy: 26
+
+
+================================================================================
+ADVERSARIAL VULNERABILITIES
+================================================================================
+
+[HIGH] high_lipschitz
+Node: /features/features.1/conv/conv.0/conv.0.0/Conv
+Message: Layer /features/features.1/conv/conv.0/conv.0.0/Conv has high Lipschitz constant (74.18), amplifying adversarial perturbations
+Lipschitz Constant: 7.42e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /features/features.2/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.2/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (47.79), amplifying adversarial perturbations
+Lipschitz Constant: 4.78e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /features/features.3/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.3/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (85.60), amplifying adversarial perturbations
+Lipschitz Constant: 8.56e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /features/features.4/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.4/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (48.35), amplifying adversarial perturbations
+Lipschitz Constant: 4.83e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /features/features.5/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.5/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (93.69), amplifying adversarial perturbations
+Lipschitz Constant: 9.37e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /features/features.6/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.6/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (73.90), amplifying adversarial perturbations
+Lipschitz Constant: 7.39e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /features/features.7/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.7/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (46.89), amplifying adversarial perturbations
+Lipschitz Constant: 4.69e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /features/features.8/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.8/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (95.74), amplifying adversarial perturbations
+Lipschitz Constant: 9.57e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /features/features.9/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.9/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (107.03), amplifying adversarial perturbations
+Lipschitz Constant: 1.07e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /features/features.10/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.10/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (91.13), amplifying adversarial perturbations
+Lipschitz Constant: 9.11e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /features/features.11/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.11/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (109.94), amplifying adversarial perturbations
+Lipschitz Constant: 1.10e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /features/features.12/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.12/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (117.47), amplifying adversarial perturbations
+Lipschitz Constant: 1.17e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /features/features.13/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.13/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (110.49), amplifying adversarial perturbations
+Lipschitz Constant: 1.10e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /features/features.14/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.14/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (91.16), amplifying adversarial perturbations
+Lipschitz Constant: 9.12e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /features/features.15/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.15/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (120.78), amplifying adversarial perturbations
+Lipschitz Constant: 1.21e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /features/features.16/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.16/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (146.89), amplifying adversarial perturbations
+Lipschitz Constant: 1.47e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /features/features.17/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.17/conv/conv.1/conv.1.0/Conv has high Lipschitz constant (302.50), amplifying adversarial perturbations
+Lipschitz Constant: 3.02e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /features/features.18/features.18.0/Conv
+Message: Layer /features/features.18/features.18.0/Conv has high Lipschitz constant (20.47), amplifying adversarial perturbations
+Lipschitz Constant: 2.05e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /classifier/classifier.1/Gemm
+Message: Layer /classifier/classifier.1/Gemm has high Lipschitz constant (10.89), amplifying adversarial perturbations
+Lipschitz Constant: 1.09e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] global_lipschitz
+Node: GLOBAL
+Message: Global Lipschitz constant 3.79e+47 indicates extreme adversarial vulnerability
+Lipschitz Constant: 3.79e+47
+
+Remediation:
+
+================================================================================
+NUMERICAL INSTABILITY VULNERABILITIES
+================================================================================
+
+[CRITICAL] gradient_explosion
+Node: /features/features.3/conv/conv.1/conv.1.0/Conv
+Message: Gradient explosion detected: ∏||∂f/∂x|| = 1.15e+07 > 10^6 at /features/features.3/conv/conv.1/conv.1.0/Conv
+
+Remediation:
+
+================================================================================
+PRIVACY LEAKAGE VULNERABILITIES
+================================================================================
+
+[MEDIUM] high_sensitivity_taint
+Node: /features/features.0/features.0.0/Conv
+Message: Layer /features/features.0/features.0.0/Conv has high condition number (1012.9) with tainted data flow, risk of training data leakage
+Condition Number: 1.01e+03
+Taint Score: 1.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.1/conv/conv.0/conv.0.0/Conv
+Message: Layer /features/features.1/conv/conv.0/conv.0.0/Conv has high gradient sensitivity (24.73), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.2/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.2/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (15.93), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.3/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.3/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (28.53), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.4/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.4/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (16.12), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.5/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.5/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (31.23), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.6/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.6/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (24.63), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.7/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.7/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (15.63), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.8/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.8/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (31.91), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.9/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.9/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (35.68), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.10/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.10/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (30.38), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] skip_connection_leakage
+Node: /features/features.10/Add
+Message: Skip connection at /features/features.10/Add (distance=5, 46 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.11/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.11/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (36.65), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.12/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.12/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (39.16), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] skip_connection_leakage
+Node: /features/features.12/Add
+Message: Skip connection at /features/features.12/Add (distance=5, 35 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.13/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.13/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (36.83), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] skip_connection_leakage
+Node: /features/features.13/Add
+Message: Skip connection at /features/features.13/Add (distance=5, 29 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.14/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.14/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (30.39), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.15/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.15/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (40.26), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] skip_connection_leakage
+Node: /features/features.15/Add
+Message: Skip connection at /features/features.15/Add (distance=5, 18 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.16/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.16/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (48.96), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] skip_connection_leakage
+Node: /features/features.16/Add
+Message: Skip connection at /features/features.16/Add (distance=5, 12 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.17/conv/conv.1/conv.1.0/Conv
+Message: Layer /features/features.17/conv/conv.1/conv.1.0/Conv has high gradient sensitivity (100.83), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /features/features.18/features.18.0/Conv
+Message: Layer /features/features.18/features.18.0/Conv has high gradient sensitivity (20.47), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /classifier/classifier.1/Gemm
+Message: Layer /classifier/classifier.1/Gemm has high condition number (4989.3) with tainted data flow, risk of training data leakage
+Condition Number: 4.99e+03
+Taint Score: 2.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /classifier/classifier.1/Gemm
+Message: Layer /classifier/classifier.1/Gemm has high gradient sensitivity (10.89), indicates memorization risk
+
+Remediation:
+
+================================================================================
+End of Report
+================================================================================

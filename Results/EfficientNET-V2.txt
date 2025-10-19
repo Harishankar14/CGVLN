@@ -1,0 +1,1462 @@
+================================================================================
+CGVulnScan - Neural Network Vulnerability Analysis Report
+================================================================================
+
+Total Vulnerabilities Found: 180
+  - Adversarial: 69
+  - Numerical: 2
+  - Privacy: 109
+
+
+================================================================================
+ADVERSARIAL VULNERABILITIES
+================================================================================
+
+[MEDIUM] high_lipschitz
+Node: /net/features/0/0/Conv
+Message: Layer /net/features/0/0/Conv has high Lipschitz constant (25.20), amplifying adversarial perturbations
+Lipschitz Constant: 2.52e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/1/0/block/0/0/Conv
+Message: Layer /net/features/1/0/block/0/0/Conv has high Lipschitz constant (23.40), amplifying adversarial perturbations
+Lipschitz Constant: 2.34e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/2/1/block/1/0/Conv
+Message: Layer /net/features/2/1/block/1/0/Conv has high Lipschitz constant (10.38), amplifying adversarial perturbations
+Lipschitz Constant: 1.04e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/2/2/block/1/0/Conv
+Message: Layer /net/features/2/2/block/1/0/Conv has high Lipschitz constant (13.23), amplifying adversarial perturbations
+Lipschitz Constant: 1.32e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/2/3/block/1/0/Conv
+Message: Layer /net/features/2/3/block/1/0/Conv has high Lipschitz constant (24.51), amplifying adversarial perturbations
+Lipschitz Constant: 2.45e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/3/1/block/1/0/Conv
+Message: Layer /net/features/3/1/block/1/0/Conv has high Lipschitz constant (21.17), amplifying adversarial perturbations
+Lipschitz Constant: 2.12e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/3/2/block/1/0/Conv
+Message: Layer /net/features/3/2/block/1/0/Conv has high Lipschitz constant (24.82), amplifying adversarial perturbations
+Lipschitz Constant: 2.48e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/3/3/block/1/0/Conv
+Message: Layer /net/features/3/3/block/1/0/Conv has high Lipschitz constant (26.40), amplifying adversarial perturbations
+Lipschitz Constant: 2.64e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/4/0/block/1/0/Conv
+Message: Layer /net/features/4/0/block/1/0/Conv has high Lipschitz constant (119.89), amplifying adversarial perturbations
+Lipschitz Constant: 1.20e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/4/0/block/3/0/Conv
+Message: Layer /net/features/4/0/block/3/0/Conv has high Lipschitz constant (14.24), amplifying adversarial perturbations
+Lipschitz Constant: 1.42e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/4/1/block/1/0/Conv
+Message: Layer /net/features/4/1/block/1/0/Conv has high Lipschitz constant (247.50), amplifying adversarial perturbations
+Lipschitz Constant: 2.47e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/4/1/block/3/0/Conv
+Message: Layer /net/features/4/1/block/3/0/Conv has high Lipschitz constant (20.28), amplifying adversarial perturbations
+Lipschitz Constant: 2.03e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/4/2/block/1/0/Conv
+Message: Layer /net/features/4/2/block/1/0/Conv has high Lipschitz constant (244.18), amplifying adversarial perturbations
+Lipschitz Constant: 2.44e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/4/2/block/3/0/Conv
+Message: Layer /net/features/4/2/block/3/0/Conv has high Lipschitz constant (14.46), amplifying adversarial perturbations
+Lipschitz Constant: 1.45e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/4/3/block/1/0/Conv
+Message: Layer /net/features/4/3/block/1/0/Conv has high Lipschitz constant (181.95), amplifying adversarial perturbations
+Lipschitz Constant: 1.82e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/4/3/block/3/0/Conv
+Message: Layer /net/features/4/3/block/3/0/Conv has high Lipschitz constant (19.28), amplifying adversarial perturbations
+Lipschitz Constant: 1.93e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/4/4/block/1/0/Conv
+Message: Layer /net/features/4/4/block/1/0/Conv has high Lipschitz constant (214.15), amplifying adversarial perturbations
+Lipschitz Constant: 2.14e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/4/4/block/3/0/Conv
+Message: Layer /net/features/4/4/block/3/0/Conv has high Lipschitz constant (20.54), amplifying adversarial perturbations
+Lipschitz Constant: 2.05e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/4/5/block/1/0/Conv
+Message: Layer /net/features/4/5/block/1/0/Conv has high Lipschitz constant (164.73), amplifying adversarial perturbations
+Lipschitz Constant: 1.65e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/4/5/block/3/0/Conv
+Message: Layer /net/features/4/5/block/3/0/Conv has high Lipschitz constant (23.41), amplifying adversarial perturbations
+Lipschitz Constant: 2.34e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/0/block/1/0/Conv
+Message: Layer /net/features/5/0/block/1/0/Conv has high Lipschitz constant (252.93), amplifying adversarial perturbations
+Lipschitz Constant: 2.53e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/0/block/3/0/Conv
+Message: Layer /net/features/5/0/block/3/0/Conv has high Lipschitz constant (18.86), amplifying adversarial perturbations
+Lipschitz Constant: 1.89e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/1/block/1/0/Conv
+Message: Layer /net/features/5/1/block/1/0/Conv has high Lipschitz constant (243.69), amplifying adversarial perturbations
+Lipschitz Constant: 2.44e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/1/block/3/0/Conv
+Message: Layer /net/features/5/1/block/3/0/Conv has high Lipschitz constant (31.15), amplifying adversarial perturbations
+Lipschitz Constant: 3.12e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/2/block/1/0/Conv
+Message: Layer /net/features/5/2/block/1/0/Conv has high Lipschitz constant (221.52), amplifying adversarial perturbations
+Lipschitz Constant: 2.22e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/2/block/3/0/Conv
+Message: Layer /net/features/5/2/block/3/0/Conv has high Lipschitz constant (25.89), amplifying adversarial perturbations
+Lipschitz Constant: 2.59e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/3/block/1/0/Conv
+Message: Layer /net/features/5/3/block/1/0/Conv has high Lipschitz constant (205.37), amplifying adversarial perturbations
+Lipschitz Constant: 2.05e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/3/block/3/0/Conv
+Message: Layer /net/features/5/3/block/3/0/Conv has high Lipschitz constant (27.66), amplifying adversarial perturbations
+Lipschitz Constant: 2.77e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/4/block/1/0/Conv
+Message: Layer /net/features/5/4/block/1/0/Conv has high Lipschitz constant (189.40), amplifying adversarial perturbations
+Lipschitz Constant: 1.89e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/4/block/3/0/Conv
+Message: Layer /net/features/5/4/block/3/0/Conv has high Lipschitz constant (34.33), amplifying adversarial perturbations
+Lipschitz Constant: 3.43e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/5/block/1/0/Conv
+Message: Layer /net/features/5/5/block/1/0/Conv has high Lipschitz constant (193.35), amplifying adversarial perturbations
+Lipschitz Constant: 1.93e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/5/block/3/0/Conv
+Message: Layer /net/features/5/5/block/3/0/Conv has high Lipschitz constant (31.68), amplifying adversarial perturbations
+Lipschitz Constant: 3.17e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/6/block/1/0/Conv
+Message: Layer /net/features/5/6/block/1/0/Conv has high Lipschitz constant (201.49), amplifying adversarial perturbations
+Lipschitz Constant: 2.01e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/6/block/3/0/Conv
+Message: Layer /net/features/5/6/block/3/0/Conv has high Lipschitz constant (39.08), amplifying adversarial perturbations
+Lipschitz Constant: 3.91e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/7/block/1/0/Conv
+Message: Layer /net/features/5/7/block/1/0/Conv has high Lipschitz constant (170.58), amplifying adversarial perturbations
+Lipschitz Constant: 1.71e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/7/block/3/0/Conv
+Message: Layer /net/features/5/7/block/3/0/Conv has high Lipschitz constant (36.06), amplifying adversarial perturbations
+Lipschitz Constant: 3.61e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/5/8/block/1/0/Conv
+Message: Layer /net/features/5/8/block/1/0/Conv has high Lipschitz constant (184.86), amplifying adversarial perturbations
+Lipschitz Constant: 1.85e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/5/8/block/3/0/Conv
+Message: Layer /net/features/5/8/block/3/0/Conv has high Lipschitz constant (29.54), amplifying adversarial perturbations
+Lipschitz Constant: 2.95e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/0/block/1/0/Conv
+Message: Layer /net/features/6/0/block/1/0/Conv has high Lipschitz constant (185.59), amplifying adversarial perturbations
+Lipschitz Constant: 1.86e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/0/block/3/0/Conv
+Message: Layer /net/features/6/0/block/3/0/Conv has high Lipschitz constant (14.40), amplifying adversarial perturbations
+Lipschitz Constant: 1.44e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/1/block/1/0/Conv
+Message: Layer /net/features/6/1/block/1/0/Conv has high Lipschitz constant (239.82), amplifying adversarial perturbations
+Lipschitz Constant: 2.40e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/1/block/3/0/Conv
+Message: Layer /net/features/6/1/block/3/0/Conv has high Lipschitz constant (27.93), amplifying adversarial perturbations
+Lipschitz Constant: 2.79e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/2/block/1/0/Conv
+Message: Layer /net/features/6/2/block/1/0/Conv has high Lipschitz constant (261.46), amplifying adversarial perturbations
+Lipschitz Constant: 2.61e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/2/block/3/0/Conv
+Message: Layer /net/features/6/2/block/3/0/Conv has high Lipschitz constant (31.86), amplifying adversarial perturbations
+Lipschitz Constant: 3.19e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/3/block/1/0/Conv
+Message: Layer /net/features/6/3/block/1/0/Conv has high Lipschitz constant (263.08), amplifying adversarial perturbations
+Lipschitz Constant: 2.63e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/3/block/3/0/Conv
+Message: Layer /net/features/6/3/block/3/0/Conv has high Lipschitz constant (30.45), amplifying adversarial perturbations
+Lipschitz Constant: 3.04e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/4/block/1/0/Conv
+Message: Layer /net/features/6/4/block/1/0/Conv has high Lipschitz constant (296.58), amplifying adversarial perturbations
+Lipschitz Constant: 2.97e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/4/block/3/0/Conv
+Message: Layer /net/features/6/4/block/3/0/Conv has high Lipschitz constant (33.00), amplifying adversarial perturbations
+Lipschitz Constant: 3.30e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/5/block/1/0/Conv
+Message: Layer /net/features/6/5/block/1/0/Conv has high Lipschitz constant (300.90), amplifying adversarial perturbations
+Lipschitz Constant: 3.01e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/5/block/3/0/Conv
+Message: Layer /net/features/6/5/block/3/0/Conv has high Lipschitz constant (33.41), amplifying adversarial perturbations
+Lipschitz Constant: 3.34e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/6/block/1/0/Conv
+Message: Layer /net/features/6/6/block/1/0/Conv has high Lipschitz constant (348.52), amplifying adversarial perturbations
+Lipschitz Constant: 3.49e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/6/block/3/0/Conv
+Message: Layer /net/features/6/6/block/3/0/Conv has high Lipschitz constant (36.90), amplifying adversarial perturbations
+Lipschitz Constant: 3.69e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/7/block/1/0/Conv
+Message: Layer /net/features/6/7/block/1/0/Conv has high Lipschitz constant (317.37), amplifying adversarial perturbations
+Lipschitz Constant: 3.17e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/7/block/3/0/Conv
+Message: Layer /net/features/6/7/block/3/0/Conv has high Lipschitz constant (38.02), amplifying adversarial perturbations
+Lipschitz Constant: 3.80e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/8/block/1/0/Conv
+Message: Layer /net/features/6/8/block/1/0/Conv has high Lipschitz constant (326.82), amplifying adversarial perturbations
+Lipschitz Constant: 3.27e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/8/block/3/0/Conv
+Message: Layer /net/features/6/8/block/3/0/Conv has high Lipschitz constant (44.78), amplifying adversarial perturbations
+Lipschitz Constant: 4.48e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/9/block/1/0/Conv
+Message: Layer /net/features/6/9/block/1/0/Conv has high Lipschitz constant (332.98), amplifying adversarial perturbations
+Lipschitz Constant: 3.33e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /net/features/6/9/block/3/0/Conv
+Message: Layer /net/features/6/9/block/3/0/Conv has high Lipschitz constant (55.21), amplifying adversarial perturbations
+Lipschitz Constant: 5.52e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/10/block/1/0/Conv
+Message: Layer /net/features/6/10/block/1/0/Conv has high Lipschitz constant (323.45), amplifying adversarial perturbations
+Lipschitz Constant: 3.23e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /net/features/6/10/block/3/0/Conv
+Message: Layer /net/features/6/10/block/3/0/Conv has high Lipschitz constant (68.33), amplifying adversarial perturbations
+Lipschitz Constant: 6.83e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/11/block/1/0/Conv
+Message: Layer /net/features/6/11/block/1/0/Conv has high Lipschitz constant (321.64), amplifying adversarial perturbations
+Lipschitz Constant: 3.22e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /net/features/6/11/block/3/0/Conv
+Message: Layer /net/features/6/11/block/3/0/Conv has high Lipschitz constant (97.70), amplifying adversarial perturbations
+Lipschitz Constant: 9.77e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/12/block/1/0/Conv
+Message: Layer /net/features/6/12/block/1/0/Conv has high Lipschitz constant (377.53), amplifying adversarial perturbations
+Lipschitz Constant: 3.78e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /net/features/6/12/block/3/0/Conv
+Message: Layer /net/features/6/12/block/3/0/Conv has high Lipschitz constant (87.56), amplifying adversarial perturbations
+Lipschitz Constant: 8.76e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/13/block/1/0/Conv
+Message: Layer /net/features/6/13/block/1/0/Conv has high Lipschitz constant (407.30), amplifying adversarial perturbations
+Lipschitz Constant: 4.07e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[HIGH] high_lipschitz
+Node: /net/features/6/13/block/3/0/Conv
+Message: Layer /net/features/6/13/block/3/0/Conv has high Lipschitz constant (59.73), amplifying adversarial perturbations
+Lipschitz Constant: 5.97e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] high_lipschitz
+Node: /net/features/6/14/block/1/0/Conv
+Message: Layer /net/features/6/14/block/1/0/Conv has high Lipschitz constant (391.05), amplifying adversarial perturbations
+Lipschitz Constant: 3.91e+02
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[MEDIUM] high_lipschitz
+Node: /net/features/6/14/block/3/0/Conv
+Message: Layer /net/features/6/14/block/3/0/Conv has high Lipschitz constant (34.00), amplifying adversarial perturbations
+Lipschitz Constant: 3.40e+01
+
+Remediation:
+  - Apply spectral normalization to constrain weight matrices
+  - Add gradient clipping during training
+
+[CRITICAL] global_lipschitz
+Node: GLOBAL
+Message: Global Lipschitz constant 9.68e+157 indicates extreme adversarial vulnerability
+Lipschitz Constant: 9.68e+157
+
+Remediation:
+
+================================================================================
+NUMERICAL INSTABILITY VULNERABILITIES
+================================================================================
+
+[MEDIUM] potentially_unsafe_division
+Node: /Div
+Message: Division at /Div may lack epsilon term for numerical stability (verify denominator)
+
+Remediation:
+
+[CRITICAL] gradient_explosion
+Node: /net/features/2/1/block/1/0/Conv
+Message: Gradient explosion detected: ∏||∂f/∂x|| = 1.87e+06 > 10^6 at /net/features/2/1/block/1/0/Conv
+
+Remediation:
+
+================================================================================
+PRIVACY LEAKAGE VULNERABILITIES
+================================================================================
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/2/1/block/1/0/Conv
+Message: Layer /net/features/2/1/block/1/0/Conv has high gradient sensitivity (10.38), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/2/2/block/1/0/Conv
+Message: Layer /net/features/2/2/block/1/0/Conv has high gradient sensitivity (13.23), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/2/3/block/1/0/Conv
+Message: Layer /net/features/2/3/block/1/0/Conv has high gradient sensitivity (24.51), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/3/1/block/1/0/Conv
+Message: Layer /net/features/3/1/block/1/0/Conv has high gradient sensitivity (21.17), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/3/2/block/1/0/Conv
+Message: Layer /net/features/3/2/block/1/0/Conv has high gradient sensitivity (24.82), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/3/3/block/1/0/Conv
+Message: Layer /net/features/3/3/block/1/0/Conv has high gradient sensitivity (26.40), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/0/block/1/0/Conv
+Message: Layer /net/features/4/0/block/1/0/Conv has high gradient sensitivity (39.96), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/0/block/3/0/Conv
+Message: Layer /net/features/4/0/block/3/0/Conv has high gradient sensitivity (14.24), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/1/block/1/0/Conv
+Message: Layer /net/features/4/1/block/1/0/Conv has high gradient sensitivity (82.50), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/1/block/3/0/Conv
+Message: Layer /net/features/4/1/block/3/0/Conv has high gradient sensitivity (20.28), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/2/block/1/0/Conv
+Message: Layer /net/features/4/2/block/1/0/Conv has high gradient sensitivity (81.39), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/2/block/3/0/Conv
+Message: Layer /net/features/4/2/block/3/0/Conv has high gradient sensitivity (14.46), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/3/block/1/0/Conv
+Message: Layer /net/features/4/3/block/1/0/Conv has high gradient sensitivity (60.65), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/4/3/block/2/fc1/Conv
+Message: Layer /net/features/4/3/block/2/fc1/Conv has high condition number (446101.5) with tainted data flow, risk of training data leakage
+Condition Number: 4.46e+05
+Taint Score: 1.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/4/3/block/2/fc2/Conv
+Message: Layer /net/features/4/3/block/2/fc2/Conv has high condition number (459894.6) with tainted data flow, risk of training data leakage
+Condition Number: 4.60e+05
+Taint Score: 2.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/3/block/3/0/Conv
+Message: Layer /net/features/4/3/block/3/0/Conv has high gradient sensitivity (19.28), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/4/block/1/0/Conv
+Message: Layer /net/features/4/4/block/1/0/Conv has high gradient sensitivity (71.38), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/4/4/block/2/fc1/Conv
+Message: Layer /net/features/4/4/block/2/fc1/Conv has high condition number (560976.3) with tainted data flow, risk of training data leakage
+Condition Number: 5.61e+05
+Taint Score: 2.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/4/4/block/2/fc2/Conv
+Message: Layer /net/features/4/4/block/2/fc2/Conv has high condition number (577186.5) with tainted data flow, risk of training data leakage
+Condition Number: 5.77e+05
+Taint Score: 3.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/4/block/3/0/Conv
+Message: Layer /net/features/4/4/block/3/0/Conv has high gradient sensitivity (20.54), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/5/block/1/0/Conv
+Message: Layer /net/features/4/5/block/1/0/Conv has high gradient sensitivity (54.91), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/4/5/block/2/fc1/Conv
+Message: Layer /net/features/4/5/block/2/fc1/Conv has high condition number (739179328.0) with tainted data flow, risk of training data leakage
+Condition Number: 7.39e+08
+Taint Score: 3.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/4/5/block/2/fc2/Conv
+Message: Layer /net/features/4/5/block/2/fc2/Conv has high condition number (117592216.0) with tainted data flow, risk of training data leakage
+Condition Number: 1.18e+08
+Taint Score: 4.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/4/5/block/3/0/Conv
+Message: Layer /net/features/4/5/block/3/0/Conv has high gradient sensitivity (23.41), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/0/block/1/0/Conv
+Message: Layer /net/features/5/0/block/1/0/Conv has high gradient sensitivity (84.31), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/0/block/3/0/Conv
+Message: Layer /net/features/5/0/block/3/0/Conv has high gradient sensitivity (18.86), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/1/block/1/0/Conv
+Message: Layer /net/features/5/1/block/1/0/Conv has high gradient sensitivity (81.23), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/1/block/3/0/Conv
+Message: Layer /net/features/5/1/block/3/0/Conv has high gradient sensitivity (31.15), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/2/block/1/0/Conv
+Message: Layer /net/features/5/2/block/1/0/Conv has high gradient sensitivity (73.84), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/2/block/2/fc1/Conv
+Message: Layer /net/features/5/2/block/2/fc1/Conv has high condition number (92472.4) with tainted data flow, risk of training data leakage
+Condition Number: 9.25e+04
+Taint Score: 4.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/2/block/2/fc2/Conv
+Message: Layer /net/features/5/2/block/2/fc2/Conv has high condition number (114770.6) with tainted data flow, risk of training data leakage
+Condition Number: 1.15e+05
+Taint Score: 5.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/2/block/3/0/Conv
+Message: Layer /net/features/5/2/block/3/0/Conv has high gradient sensitivity (25.89), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/3/block/1/0/Conv
+Message: Layer /net/features/5/3/block/1/0/Conv has high gradient sensitivity (68.46), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/3/block/2/fc1/Conv
+Message: Layer /net/features/5/3/block/2/fc1/Conv has high condition number (983471.0) with tainted data flow, risk of training data leakage
+Condition Number: 9.83e+05
+Taint Score: 5.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/3/block/2/fc2/Conv
+Message: Layer /net/features/5/3/block/2/fc2/Conv has high condition number (736470.5) with tainted data flow, risk of training data leakage
+Condition Number: 7.36e+05
+Taint Score: 6.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/3/block/3/0/Conv
+Message: Layer /net/features/5/3/block/3/0/Conv has high gradient sensitivity (27.66), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/4/block/1/0/Conv
+Message: Layer /net/features/5/4/block/1/0/Conv has high gradient sensitivity (63.13), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/4/block/2/fc1/Conv
+Message: Layer /net/features/5/4/block/2/fc1/Conv has high condition number (156496112.0) with tainted data flow, risk of training data leakage
+Condition Number: 1.56e+08
+Taint Score: 6.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/4/block/2/fc2/Conv
+Message: Layer /net/features/5/4/block/2/fc2/Conv has high condition number (157002208.0) with tainted data flow, risk of training data leakage
+Condition Number: 1.57e+08
+Taint Score: 7.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/4/block/3/0/Conv
+Message: Layer /net/features/5/4/block/3/0/Conv has high gradient sensitivity (34.33), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/5/block/1/0/Conv
+Message: Layer /net/features/5/5/block/1/0/Conv has high gradient sensitivity (64.45), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/5/block/2/fc1/Conv
+Message: Layer /net/features/5/5/block/2/fc1/Conv has high condition number (981808128.0) with tainted data flow, risk of training data leakage
+Condition Number: 9.82e+08
+Taint Score: 7.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/5/block/2/fc2/Conv
+Message: Layer /net/features/5/5/block/2/fc2/Conv has high condition number (1897703168.0) with tainted data flow, risk of training data leakage
+Condition Number: 1.90e+09
+Taint Score: 8.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/5/block/3/0/Conv
+Message: Layer /net/features/5/5/block/3/0/Conv has high gradient sensitivity (31.68), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/6/block/1/0/Conv
+Message: Layer /net/features/5/6/block/1/0/Conv has high gradient sensitivity (67.16), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/6/block/2/fc1/Conv
+Message: Layer /net/features/5/6/block/2/fc1/Conv has high condition number (7063071.0) with tainted data flow, risk of training data leakage
+Condition Number: 7.06e+06
+Taint Score: 8.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/6/block/2/fc2/Conv
+Message: Layer /net/features/5/6/block/2/fc2/Conv has high condition number (7991655.5) with tainted data flow, risk of training data leakage
+Condition Number: 7.99e+06
+Taint Score: 9.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/6/block/3/0/Conv
+Message: Layer /net/features/5/6/block/3/0/Conv has high gradient sensitivity (39.08), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/7/block/1/0/Conv
+Message: Layer /net/features/5/7/block/1/0/Conv has high gradient sensitivity (56.86), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/7/block/2/fc1/Conv
+Message: Layer /net/features/5/7/block/2/fc1/Conv has high condition number (111245536.0) with tainted data flow, risk of training data leakage
+Condition Number: 1.11e+08
+Taint Score: 9.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/7/block/2/fc2/Conv
+Message: Layer /net/features/5/7/block/2/fc2/Conv has high condition number (65021272.0) with tainted data flow, risk of training data leakage
+Condition Number: 6.50e+07
+Taint Score: 10.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/7/block/3/0/Conv
+Message: Layer /net/features/5/7/block/3/0/Conv has high gradient sensitivity (36.06), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/8/block/1/0/Conv
+Message: Layer /net/features/5/8/block/1/0/Conv has high gradient sensitivity (61.62), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/8/block/2/fc1/Conv
+Message: Layer /net/features/5/8/block/2/fc1/Conv has high condition number (5337551.0) with tainted data flow, risk of training data leakage
+Condition Number: 5.34e+06
+Taint Score: 10.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/5/8/block/2/fc2/Conv
+Message: Layer /net/features/5/8/block/2/fc2/Conv has high condition number (7528606.5) with tainted data flow, risk of training data leakage
+Condition Number: 7.53e+06
+Taint Score: 11.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/5/8/block/3/0/Conv
+Message: Layer /net/features/5/8/block/3/0/Conv has high gradient sensitivity (29.54), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/0/block/1/0/Conv
+Message: Layer /net/features/6/0/block/1/0/Conv has high gradient sensitivity (61.86), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/0/block/2/fc1/Conv
+Message: Layer /net/features/6/0/block/2/fc1/Conv has high condition number (1192039.0) with tainted data flow, risk of training data leakage
+Condition Number: 1.19e+06
+Taint Score: 11.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/0/block/2/fc2/Conv
+Message: Layer /net/features/6/0/block/2/fc2/Conv has high condition number (563215.3) with tainted data flow, risk of training data leakage
+Condition Number: 5.63e+05
+Taint Score: 12.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/0/block/3/0/Conv
+Message: Layer /net/features/6/0/block/3/0/Conv has high gradient sensitivity (14.40), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/1/block/1/0/Conv
+Message: Layer /net/features/6/1/block/1/0/Conv has high gradient sensitivity (79.94), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/1/block/2/fc1/Conv
+Message: Layer /net/features/6/1/block/2/fc1/Conv has high condition number (19060.2) with tainted data flow, risk of training data leakage
+Condition Number: 1.91e+04
+Taint Score: 12.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/1/block/2/fc2/Conv
+Message: Layer /net/features/6/1/block/2/fc2/Conv has high condition number (13324.4) with tainted data flow, risk of training data leakage
+Condition Number: 1.33e+04
+Taint Score: 13.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/1/block/3/0/Conv
+Message: Layer /net/features/6/1/block/3/0/Conv has high gradient sensitivity (27.93), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/2/block/1/0/Conv
+Message: Layer /net/features/6/2/block/1/0/Conv has high gradient sensitivity (87.15), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/2/block/2/fc1/Conv
+Message: Layer /net/features/6/2/block/2/fc1/Conv has high condition number (197078.4) with tainted data flow, risk of training data leakage
+Condition Number: 1.97e+05
+Taint Score: 13.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/2/block/2/fc2/Conv
+Message: Layer /net/features/6/2/block/2/fc2/Conv has high condition number (320390.2) with tainted data flow, risk of training data leakage
+Condition Number: 3.20e+05
+Taint Score: 14.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/2/block/3/0/Conv
+Message: Layer /net/features/6/2/block/3/0/Conv has high gradient sensitivity (31.86), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/3/block/1/0/Conv
+Message: Layer /net/features/6/3/block/1/0/Conv has high gradient sensitivity (87.69), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/3/block/3/0/Conv
+Message: Layer /net/features/6/3/block/3/0/Conv has high gradient sensitivity (30.45), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/4/block/1/0/Conv
+Message: Layer /net/features/6/4/block/1/0/Conv has high gradient sensitivity (98.86), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/4/block/2/fc1/Conv
+Message: Layer /net/features/6/4/block/2/fc1/Conv has high condition number (464221.2) with tainted data flow, risk of training data leakage
+Condition Number: 4.64e+05
+Taint Score: 14.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/4/block/2/fc2/Conv
+Message: Layer /net/features/6/4/block/2/fc2/Conv has high condition number (942938.1) with tainted data flow, risk of training data leakage
+Condition Number: 9.43e+05
+Taint Score: 15.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/4/block/3/0/Conv
+Message: Layer /net/features/6/4/block/3/0/Conv has high gradient sensitivity (33.00), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/5/block/1/0/Conv
+Message: Layer /net/features/6/5/block/1/0/Conv has high gradient sensitivity (100.30), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/5/block/2/fc1/Conv
+Message: Layer /net/features/6/5/block/2/fc1/Conv has high condition number (321591.6) with tainted data flow, risk of training data leakage
+Condition Number: 3.22e+05
+Taint Score: 15.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/5/block/2/fc2/Conv
+Message: Layer /net/features/6/5/block/2/fc2/Conv has high condition number (442263.4) with tainted data flow, risk of training data leakage
+Condition Number: 4.42e+05
+Taint Score: 16.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/5/block/3/0/Conv
+Message: Layer /net/features/6/5/block/3/0/Conv has high gradient sensitivity (33.41), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/5/Add
+Message: Skip connection at /net/features/6/5/Add (distance=14, 143 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/6/block/1/0/Conv
+Message: Layer /net/features/6/6/block/1/0/Conv has high gradient sensitivity (116.17), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/6/block/3/0/Conv
+Message: Layer /net/features/6/6/block/3/0/Conv has high gradient sensitivity (36.90), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/6/Add
+Message: Skip connection at /net/features/6/6/Add (distance=14, 128 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/7/block/1/0/Conv
+Message: Layer /net/features/6/7/block/1/0/Conv has high gradient sensitivity (105.79), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/7/block/3/0/Conv
+Message: Layer /net/features/6/7/block/3/0/Conv has high gradient sensitivity (38.02), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/7/Add
+Message: Skip connection at /net/features/6/7/Add (distance=14, 113 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/8/block/1/0/Conv
+Message: Layer /net/features/6/8/block/1/0/Conv has high gradient sensitivity (108.94), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/8/block/2/fc1/Conv
+Message: Layer /net/features/6/8/block/2/fc1/Conv has high condition number (76916.1) with tainted data flow, risk of training data leakage
+Condition Number: 7.69e+04
+Taint Score: 16.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/features/6/8/block/2/fc2/Conv
+Message: Layer /net/features/6/8/block/2/fc2/Conv has high condition number (76402.7) with tainted data flow, risk of training data leakage
+Condition Number: 7.64e+04
+Taint Score: 17.00
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/8/block/3/0/Conv
+Message: Layer /net/features/6/8/block/3/0/Conv has high gradient sensitivity (44.78), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/8/Add
+Message: Skip connection at /net/features/6/8/Add (distance=14, 98 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/9/block/1/0/Conv
+Message: Layer /net/features/6/9/block/1/0/Conv has high gradient sensitivity (110.99), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/9/block/3/0/Conv
+Message: Layer /net/features/6/9/block/3/0/Conv has high gradient sensitivity (55.21), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/9/Add
+Message: Skip connection at /net/features/6/9/Add (distance=14, 83 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/10/block/1/0/Conv
+Message: Layer /net/features/6/10/block/1/0/Conv has high gradient sensitivity (107.82), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/10/block/3/0/Conv
+Message: Layer /net/features/6/10/block/3/0/Conv has high gradient sensitivity (68.33), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/10/Add
+Message: Skip connection at /net/features/6/10/Add (distance=14, 68 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/11/block/1/0/Conv
+Message: Layer /net/features/6/11/block/1/0/Conv has high gradient sensitivity (107.21), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/11/block/3/0/Conv
+Message: Layer /net/features/6/11/block/3/0/Conv has high gradient sensitivity (97.70), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/11/Add
+Message: Skip connection at /net/features/6/11/Add (distance=14, 53 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/12/block/1/0/Conv
+Message: Layer /net/features/6/12/block/1/0/Conv has high gradient sensitivity (125.84), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/12/block/3/0/Conv
+Message: Layer /net/features/6/12/block/3/0/Conv has high gradient sensitivity (87.56), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/12/Add
+Message: Skip connection at /net/features/6/12/Add (distance=14, 38 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/13/block/1/0/Conv
+Message: Layer /net/features/6/13/block/1/0/Conv has high gradient sensitivity (135.77), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/13/block/3/0/Conv
+Message: Layer /net/features/6/13/block/3/0/Conv has high gradient sensitivity (59.73), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/13/Add
+Message: Skip connection at /net/features/6/13/Add (distance=14, 23 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/14/block/1/0/Conv
+Message: Layer /net/features/6/14/block/1/0/Conv has high gradient sensitivity (130.35), indicates memorization risk
+
+Remediation:
+
+[MEDIUM] gradient_memorization_risk
+Node: /net/features/6/14/block/3/0/Conv
+Message: Layer /net/features/6/14/block/3/0/Conv has high gradient sensitivity (34.00), indicates memorization risk
+
+Remediation:
+
+[HIGH] skip_connection_leakage
+Node: /net/features/6/14/Add
+Message: Skip connection at /net/features/6/14/Add (distance=14, 8 layers from output) increases model inversion attack success by 3.2x
+
+Remediation:
+  - Remove or shorten skip connections in final 30% of network
+  - Apply differential privacy noise to gradients
+
+[MEDIUM] high_sensitivity_taint
+Node: /net/classifier/1/Gemm
+Message: Layer /net/classifier/1/Gemm has high condition number (66321.2) with tainted data flow, risk of training data leakage
+Condition Number: 6.63e+04
+Taint Score: 17.50
+
+Remediation:
+  - Apply weight regularization to reduce condition number
+  - Consider DP-SGD training for privacy guarantees
+
+================================================================================
+End of Report
+================================================================================
